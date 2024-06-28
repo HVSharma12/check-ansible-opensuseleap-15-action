@@ -11,6 +11,7 @@ LABEL "com.github.actions.color"="green"
 
 RUN zypper refresh && zypper install -y \
   ansible \
+  systemd \
   python3-rpm \
   git \
   && zypper clean -a
